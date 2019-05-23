@@ -35,7 +35,7 @@ const quotes = [
 
 console.log(quotes);
 
-// Random BG color
+//Random BG color
 const random_bg_color = () => {
   let x = Math.floor(Math.random() * 256);
   let y = Math.floor(Math.random() * 256);
