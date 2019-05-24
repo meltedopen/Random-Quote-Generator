@@ -30,6 +30,12 @@ const quotes = [
     source: 'Edgar Allan Poe',
     citation: 'The Flag Of Our Union',
     year: '1849'
+  },
+  {
+    quote:
+      'Before you judge a man, walk a mile in his shoes. After that who cares?... He’s a mile away and you’ve got his shoes!',
+    source: 'Billy Connolly',
+    tag: 'humor'
   }
 ];
 
@@ -63,6 +69,9 @@ const printQuote = () => {
   }
   if (randomQuote.year) {
     htmlString += `<span class ='year'>${randomQuote.year}</span>`;
+  }
+  if (randomQuote.tag) {
+    htmlString += `<span class ='tag'>${randomQuote.tag}</span>`;
   }
   htmlString += '</p>';
   document.getElementById('quote-box').innerHTML = htmlString;
